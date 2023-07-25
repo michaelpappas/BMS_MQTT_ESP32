@@ -1,7 +1,7 @@
 # JBD BMS Serial MQTT Script
 An Arduino script for the ESP-32 microcontroller that reads sends a received serial communication to a JBD BMS commonly used for DIY LiFPO4 batteries. This is base off of the script written by [playersz28](https://github.com/playersz28/JBD-ESP32) with changes to the MQTT schema.
 I made a JST-PH jumper cable similar to the one used by the factory Bluetooth dongle to connect the circtuit board to the BMS serial communication port.
-This is all made for communicating to an [MQTT client](https://github.com/michaelpappas/van_mqtt_client) that managers other devices through a DIY camper van.
+This is all made for communicating to an [MQTT client](https://github.com/michaelpappas/van_mqtt_client) that manages other devices throughout a DIY camper van.
 
 ## Table of Contents
 - [Wiring](#wiring)
