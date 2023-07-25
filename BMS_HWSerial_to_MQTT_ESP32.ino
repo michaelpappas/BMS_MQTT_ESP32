@@ -360,12 +360,13 @@ void loop() {
 
       serializeJson(general, json_output);
 
-      //Serial.println(json_output);
+      Serial.println(json_output);
 
       if (client.publish(GENERAL, json_output) == true) {
-        //Serial.println("Success sending message");
+        Serial.println("Success sending message");
+        Serial.println("topic- ", GENERAL);
       } else {
-        //Serial.println("Error sending message");
+        Serial.println("Error sending message");
       }
     }
   }
@@ -580,7 +581,7 @@ int checkSerial(byte* buff) {
   //}
   //ss->enableTx(false);
   // wait 1 second for the reply from SOftwareSerial if any
-  delay(1000);
+  delay(2000);
   if (Serial2.available()) {
     //Serial.print("\nResult:");
     while (Serial2.available()) {
